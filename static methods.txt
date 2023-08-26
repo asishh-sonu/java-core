@@ -1,0 +1,87 @@
+public class StaticMethodExample {
+    public void nonStaticMethod() {
+        System.out.println("This is a non-static method.");
+    }
+
+    public static void staticMethod() {
+        StaticMethodExample obj = new StaticMethodExample();
+        obj.nonStaticMethod();
+        System.out.println("This is a static method.");
+    }
+
+    public static void main(String[] args) {
+        staticMethod();
+    }
+}
+
+
+
+
+public class StaticMethodExample {
+    public void nonStaticMethod() {
+        System.out.println("This is a non-static method.");
+    }
+
+    public static void staticMethod() {
+        StaticMethodExample obj = new StaticMethodExample();
+        obj.nonStaticMethod();
+        System.out.println("This is a static method.");
+    }
+}
+
+public class MainClass {
+    public static void main(String[] args) {
+        StaticMethodExample.staticMethod();
+    }
+}
+
+
+
+
+public class StaticMethodExample {
+    public static void staticMethod1() {
+        System.out.println("This is static method 1.");
+    }
+
+    public static void staticMethod2() {
+        System.out.println("This is static method 2.");
+    }
+
+    public static void main(String[] args) {
+        // Approach 1: Call static method 2 using class name
+        StaticMethodExample.staticMethod2();
+
+        // Approach 2: Call static method 2 using object reference
+        StaticMethodExample obj = new StaticMethodExample();
+        obj.staticMethod2();
+
+        // Approach 3: Call static method 2 directly
+        staticMethod2();
+        
+        // Call static method 1
+        staticMethod1();
+    }
+}
+
+
+
+public class StaticMethodExample {
+    public static void staticMethod1() {
+        System.out.println("This is static method 1.");
+    }
+
+    public static void staticMethod2() {
+        System.out.println("This is static method 2.");
+    }
+}
+
+public class MainClass {
+    public static void main(String[] args) {
+        // Approach 1: Call static method 2 using class name
+        StaticMethodExample.staticMethod2();
+
+        // Approach 2: Call static method 2 using object reference
+        StaticMethodExample obj = new StaticMethodExample();
+        obj.staticMethod2();
+    }
+}
